@@ -16,9 +16,9 @@ var level = 0;
 var colors = ["g", "r", "y", "b"];
 
 $(".box").click(function () {
+    effects($(this).attr("id"));
     if (in_progress) {
         input.push($(this).attr("id"));
-        effects($(this).attr("id"));
         check();
 	}
 })
